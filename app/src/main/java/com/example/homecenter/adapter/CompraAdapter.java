@@ -42,7 +42,7 @@ public class CompraAdapter extends RecyclerView.Adapter {
         Compra compra = compras.get(position);
 
         holder.nome.setText(compra.getLoja().getNome());
-        holder.valor.setText(compra.getValor().toString());
+        holder.valor.setText("R$ " + compra.getValor().toString());
         holder.data.setText(compra.getData().toString());
         holder.local.setText(compra.getLoja().getLocal());
     }

@@ -57,15 +57,16 @@ public class ComprasFragment extends Fragment {
         //Data
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         Date parse = null;
+        String data = null;
         try {
             parse = formatter.parse("17/12/2007 19:30:20");
-            String data = formatter.format(parse);
+            data = formatter.format(parse);
         } catch (ParseException e) {
             e.printStackTrace();
         }
 
 
-        Compra compra = new Compra(new Date(), 189.90, loja, produtos);
+        Compra compra = new Compra(data, 189.90, loja, produtos);
         ArrayList<Compra> compras= new ArrayList<Compra>();
         compras.add(compra);
         compras.add(compra);
