@@ -9,10 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".activity.NovaCompraActivity"
-            android:label="@string/title_activity_nova_compra"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activity.NovaCompraActivity"></activity>
         <activity
             android:name=".activity.MainActivity"
             android:label="@string/app_name"
